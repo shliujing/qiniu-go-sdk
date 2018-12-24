@@ -17,8 +17,8 @@ var (
 )
 
 func main() {
-	localFile := "/Users/jingliu/Desktop/photo-1508328991403-28528188c065.jpeg"
-	key := "test/1224/photo-1508328991403-28528188c065.jpeg"
+	localFile := "/Users/jingliu/Desktop/test-desktop.png"
+	key := "test/1224/test-desktop.png"
 	putPolicy := storage.PutPolicy{
 		Scope: bucket + ":" + key,
 	}

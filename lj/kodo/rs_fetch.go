@@ -26,9 +26,9 @@ func main() {
 	//cfg.Zone=&storage.ZoneHuabei
 	bucketManager := storage.NewBucketManager(mac, &cfg)
 
-	resURL := "http://test-pub.iamlj.com/test/1224/photo-1508328991403-28528188c065.jpeg"
+	resURL := "http://devtools.qiniu.com/qiniu.png"
 	// 指定保存的key
-	fetchRet, err := bucketManager.Fetch(resURL, bucket, "test/1224/photo-xxxx.jpeg")
+	fetchRet, err := bucketManager.Fetch(resURL, bucket, "test/1224/qiniu.png")
 	if err != nil {
 		fmt.Println("fetch error,", err)
 	} else {
